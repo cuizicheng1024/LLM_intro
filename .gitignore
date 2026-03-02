@@ -1,0 +1,7 @@
+.trae/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+chp1/glove.6B.100d.txt
