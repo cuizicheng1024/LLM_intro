@@ -5,3 +5,4 @@ __pycache__/
 .vscode/
 .idea/
 Happy_LLM/chp1/glove.6B.100d.txt
+Happy_LLM/chp2/attention_heatmap.png
