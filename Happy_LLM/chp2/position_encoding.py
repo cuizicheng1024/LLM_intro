@@ -22,5 +22,5 @@ def PositionEncoding(seq_len, d_model, n=10000):
     return P
 
 # 示例：生成一个较小维度的编码便于直观打印
-P = PositionEncoding(seq_len=4, d_model=4, n=100)
+P = PositionEncoding(seq_len=4, d_model=4, n=50)
 print(P)

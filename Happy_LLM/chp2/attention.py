@@ -17,6 +17,10 @@ def scaled_dot_product_attention(q, k, v, mask=None):
     """
     q, k, v 的形状均为: (batch_size, num_heads, seq_len, d_k)
     """
+    
+#  q：是你传入的查询（Query）张量，形状是 (batch_size, num_heads, seq_len_q, d_k)；
+# .size()：PyTorch 张量的方法，返回张量各维度的大小（等价于 .shape，但 .size() 可以传索引，更灵活）；
+# -1：倒数第一个维度的索引（Python 中负数索引表示从后往前数）。
     d_k = q.size(-1)
     
     # 1. 计算点积得分: Q * K^T
